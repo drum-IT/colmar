@@ -1,7 +1,7 @@
 html, body {
   width: 100%;
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 header, nav, div, footer {
@@ -9,7 +9,7 @@ header, nav, div, footer {
 }
 
 h1 {
-  font-size: 3.3rem;
+  font-size: 2.25rem;
 }
 
 header {
@@ -24,6 +24,7 @@ header {
   display: flex;
   align-items: center;
   margin-left: 24px;
+  font-size: 1.15rem;
 }
 
 header nav {
@@ -53,12 +54,11 @@ header nav a {
 }
 
 #headline h1 {
-  font-size: 3.3rem;
   margin-bottom: 40px;
 }
 
 #headline p {
-  font-size: 2.25rem;
+  font-size: 1.25rem;
   margin-bottom: 40px;
 }
 
@@ -71,7 +71,7 @@ header nav a {
   color: white;
   border: none;
   padding: 8px 0px;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 #info {
@@ -130,7 +130,7 @@ header nav a {
 }
 
 .info-detail h1 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin-bottom: 8px;
 }
 
@@ -138,6 +138,52 @@ header nav a {
   margin-bottom: 8px;
 }
 
+.info-detail a {
+  text-decoration: none;
+  color: blue;
+}
+
 .active-button {
   background-color: gray;
+}
+
+#learning {
+  display: flex;
+  background-color: gray;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0 0 0;
+}
+
+#learn-headline {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.learn {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 270px;
+  background-color: white;
+  margin: 0 16px;
+  margin-bottom: 32px;
+}
+
+.learn img {
+  width: 100%;
+}
+
+.learn h1 {
+  font-size: 1.25rem;
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-bottom: 8px;
+}
+
+.learn p {
+  margin-top: 8px;
+  margin-left: 16px;
 }
