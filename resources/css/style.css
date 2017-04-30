@@ -1,17 +1,36 @@
+/* GLOBAL STYLES */
+
 html, body {
   width: 100%;
   font-family: sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
-header, nav, div, footer {
-  /*border: 1px solid black;*/
+#logo i {
+  display: none;
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-family: 'Poppins', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+p, a {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1, p, a, span {
+  color: rgb(74, 74, 74);
+}
+
+.active-button {
+  background-color: rgb(216, 216, 216);
+}
+
+/* HEADER SECTION */
 header {
   width: 100%;
   height: 64px;
@@ -27,6 +46,16 @@ header {
   font-size: 1.15rem;
 }
 
+#logo #colmar {
+  font-weight: 600;
+  color: rgb(74, 74, 74);
+}
+
+#logo #academy {
+  font-weight: 400;
+  color: rgb(160, 160, 160);
+}
+
 header nav {
   margin-right: 8px;
 }
@@ -35,10 +64,12 @@ header nav a {
   margin-right: 16px;
 }
 
+/* BANNER SECTION */
+
 #banner {
   display: flex;
   align-items: center;
-  background-color: gray;
+  background-color: rgb(216, 216, 216);
 }
 
 #banner img {
@@ -50,11 +81,14 @@ header nav a {
 #headline {
   display: inline-flex;
   flex-direction: column;
-  width: 25%;
+  width: 30%;
+  max-width: 360px;
 }
 
 #headline h1 {
   margin-bottom: 40px;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 #headline p {
@@ -67,12 +101,14 @@ header nav a {
   text-decoration: none;
   text-align: center;
   width: 100%;
-  background-color: black;
+  background-color: rgb(74, 74, 74);
   color: white;
   border: none;
   padding: 8px 0px;
   font-size: 1rem;
 }
+
+/* INFO SECTION */
 
 #info {
   display: flex;
@@ -82,7 +118,7 @@ header nav a {
   display: inline-flex;
   justify-content: flex-start;
   flex-direction: column;
-  border-right: 1px solid black;
+  border-right: 1px solid rgb(216, 216, 216);
 }
 
 #info-1 img {
@@ -94,6 +130,8 @@ header nav a {
   width: 93%;
   margin-left: 24px;
   margin-bottom: 24px;
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 
 #info-1 p {
@@ -104,7 +142,7 @@ header nav a {
 
 #info-2 {
   margin-top: 16px;
-  width: 423px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
@@ -113,7 +151,7 @@ header nav a {
 
 .info-box {
   display: flex;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(216, 216, 216);;
   align-items: center;
 }
 
@@ -130,27 +168,24 @@ header nav a {
 }
 
 .info-detail h1 {
-  font-size: 1.25rem;
-  margin-bottom: 8px;
+  font-size: 1.5rem;
+  margin-bottom: 16px;
 }
 
 .info-detail p {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .info-detail a {
-  text-decoration: none;
-  color: blue;
+  color: rgb(95, 150, 220);
 }
 
-.active-button {
-  background-color: gray;
-}
+/* LEARNING SECTION */
 
 #learning {
   display: flex;
-  background-color: gray;
-  flex-wrap: wrap;
+  background-color: rgb(216, 216, 216);
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 32px 0 0 0;
@@ -160,20 +195,30 @@ header nav a {
   width: 100%;
   text-align: center;
   margin-bottom: 32px;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+#learning .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
 }
 
 .learn {
   display: flex;
   flex-direction: column;
-  width: 250px;
-  height: 270px;
+  width: 350px;
+  height: 350px;
   background-color: white;
   margin: 0 16px;
   margin-bottom: 32px;
 }
 
 .learn img {
-  width: 100%;
+  width: 350px;
 }
 
 .learn h1 {
@@ -184,6 +229,139 @@ header nav a {
 }
 
 .learn p {
-  margin-top: 8px;
+  margin-top: 16px;
   margin-left: 16px;
+}
+
+/* THESIS SECTION */
+
+#thesis {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 0 0 0;
+  border-bottom: 1px solid rgb(216, 216, 216);;
+}
+
+#thesis .container {
+  display: flex;
+}
+
+#thesis .info-box {
+  border: none;
+}
+
+#thesis-1 {
+  display: inline-flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+#thesis-1 video {
+  width: 93%;
+  margin: 0 0 24px 24px;
+}
+
+#thesis-1 h1 {
+  width: 93%;
+  margin-left: 24px;
+  margin-bottom: 24px;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+#thesis-1 p {
+  width: 93%;
+  margin-left: 24px;
+  margin-bottom: 24px;
+}
+
+#thesis-2 {
+  width: 423px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+}
+
+#copyright {
+  margin: 16px 0 0 24px;
+}
+
+footer nav {
+  margin: 16px 8px 0 0;
+}
+
+footer nav a {
+  margin-right: 16px;
+}
+
+@media only screen and (max-width: 414px) {
+  header nav {
+    display: none;
+  }
+
+  #logo {
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+  }
+
+  #logo i {
+    display: inline-block;
+  }
+
+  #logo span {
+    display: none;
+  }
+
+  #banner img {
+    display: none;
+  }
+
+  #headline {
+    display: inline-flex;
+    flex-direction: column;
+    width: 95%;
+    max-width: 360px;
+    margin-top: 180px;
+  }
+
+  #headline h1 {
+    margin: 32px 0 32px 16px;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  #headline p {
+    font-size: 1.25rem;
+    margin-bottom: 24px;
+    margin-left: 16px;
+  }
+
+  #headline a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(74, 74, 74);
+    color: white;
+    border: none;
+    padding: 8px 0px;
+    font-size: 1rem;
+    margin-left: 16px;
+    margin-bottom: 32px;
+  }
+
+  #info-1 {
+    display: none;
+  }
+
 }
